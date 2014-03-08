@@ -1,0 +1,24 @@
+body {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+}
+html, body {
+    height: 100%;
+}
+* html body {
+    height: 100%;
+}
+.jhandle {
+    border: 1px solid #333;
+    position: absolute;
+    z-index: 10;
+}
+.handle {
+    background: rgba(112, 112, 112, 0.7);
+    border: 1px solid #000;
+    position: absolute;
+}
+.top {
+    z-index: 20;
+}

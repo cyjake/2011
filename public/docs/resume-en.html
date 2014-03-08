@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Chen Yangjian's Resume</title>
+<style type="text/css" media="screen">
+/* Copyright (c) 2009, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 3.0.0b1 build: 1160 */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* HTML5 block items */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* color theme
+ * http://kuler.adobe.com/#themeID/963263
+ */
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    visibility: hidden;
+    width: 0px;
+}
+html, body { overflow-x: hidden; }
+body {
+    font-family: "微软雅黑", "Microsoft Yahei", Helvetica, Arial;
+    font-size: 12px;
+}
+.wrap { width: 690px; margin: 0 auto; }
+.left {
+    margin-right: 20px;
+    float: left;
+    width: 140px;
+}
+.desc {
+    margin-left: 160px;
+}
+a {
+    text-decoration: none;
+    color: #664429;
+}
+a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #222;
+    color: #eee;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    -webkit-box-shadow: #ccc 0px 5px 15px;
+       -moz-box-shadow: #ccc 0px 5px 15px;
+            box-shadow: #ccc 0px 5px 15px;
+}
+h1 {
+    color: #fff;
+    text-shadow: #c2a266 1px 1px 1px;
+    font-size: 30px;
+    float: left;
+    margin-right: 20px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 30px;
+}
+h1 span {
+    font-weight: 800;
+}
+header .contact {
+    float: left;
+    width: 320px;
+}
+header dt {
+    float: left;
+    width: 60px;
+    color: #777;
+    text-align: right;
+    margin-right: 10px;
+}
+header dd {
+}
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #ddd;
+    right: 20px; top: 10px;
+    position: absolute;
+}
+.time-range {
+    color: #445c4f;
+}
+p {
+    line-height: 16px;
+    padding: 2px 0;
+}
+section {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+section:hover {
+    background-color: #eee;
+}
+section:hover h2 {
+    color: #555;
+}
+#education {
+    border-top: 1px solid #ddd;
+}
+#education:hover h2, #education:hover .university {
+    color: #222;
+}
+#education .left {
+    text-align: center;
+}
+.university {
+    font-weight: 600;
+    font-size: 20px;
+    color: #555;
+}
+.school {
+    color: #444;
+}
+.specialty {
+    color: #222;
+}
+#affiliation:hover h2, #affiliation:hover .corp {
+    color: #b3d18f;
+}
+#affiliation .left {
+    text-align: center;
+}
+ol.experience {
+    margin-left: 20px;
+}
+ol.experience li {
+    margin-bottom: 2px;
+    list-style-type: decimal;
+}
+.corp {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #666;
+}
+.corp-desc {
+    color: #444;
+}
+#projects:hover h2, #projects:hover .name {
+    color: #c2a266;
+}
+ol.projects {
+}
+ol.projects .left {
+    text-align: right;
+}
+ol.projects .name {
+    font-size: 16px;
+    color: #666;
+    line-height: 18px;
+}
+ol.projects .time-range {
+
+}
+ol.projects li {
+    overflow: auto;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+ol.projects ul {}
+ul.skillset li {
+    display: block;
+    float: left;
+    background-color: #ddd;
+    border: 1px solid #777;
+    border-left: none;
+    border-top: none;
+    padding: 2px 5px;
+    margin-right: 5px;
+    color: #333;
+}
+ul.skillset li a {
+    color: #333;
+    text-decoration: none;
+}
+#interests:hover h2 {
+    color: #664429;
+}
+ol.interests li {
+    overflow: auto;
+}
+ol.interests li .label {
+    text-align: right;
+}
+ol.interests .desc {
+    margin-left: 160px;
+}
+footer .wrap {
+    padding: 20px 0;
+}
+footer .left {
+    text-align: right;
+    padding-left: 20px;
+}
+footer #right-arrow {
+    display: block;
+    border: 20px solid #e0d68b;
+    height: 20px;
+    width: 20px;
+    border-left: none;
+    border-bottom: none;
+    -webkit-border-top-right-radius: 10px;
+       -moz-border-radius-topright: 10px;
+            border-radius-topright: 10px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+footer ul.homepage li {
+
+}
+footer p {
+    text-align: right;
+    padding-right: 10px;
+}
+</style>
+<script type="text/javascript">
+// html5shiv MIT @rem remysharp.com/html5-enabling-script
+// iepp v1.5.1 MIT @jon_neal iecss.com/print-protector
+/*@cc_on(function(p,e){var q=e.createElement("div");q.innerHTML="<z>i</z>";q.childNodes.length!==1&&function(){function r(a,b){if(g[a])g[a].styleSheet.cssText+=b;else{var c=s[l],d=e[j]("style");d.media=a;c.insertBefore(d,c[l]);g[a]=d;r(a,b)}}function t(a,b){for(var c=new RegExp("\\b("+m+")\\b(?!.*[;}])","gi"),d=function(k){return".iepp_"+k},h=-1;++h<a.length;){b=a[h].media||b;t(a[h].imports,b);r(b,a[h].cssText.replace(c,d))}}for(var s=e.documentElement,i=e.createDocumentFragment(),g={},m="abbr article aside audio canvas details figcaption figure footer header hgroup mark meter nav output progress section summary time video".replace(/ /g, '|'),
+n=m.split("|"),f=[],o=-1,l="firstChild",j="createElement";++o<n.length;){e[j](n[o]);i[j](n[o])}i=i.appendChild(e[j]("div"));p.attachEvent("onbeforeprint",function(){for(var a,b=e.getElementsByTagName("*"),c,d,h=new RegExp("^"+m+"$","i"),k=-1;++k<b.length;)if((a=b[k])&&(d=a.nodeName.match(h))){c=new RegExp("^\\s*<"+d+"(.*)\\/"+d+">\\s*$","i");i.innerHTML=a.outerHTML.replace(/\r|\n/g," ").replace(c,a.currentStyle.display=="block"?"<div$1/div>":"<span$1/span>");c=i.childNodes[0];c.className+=" iepp_"+
+d;c=f[f.length]=[a,c];a.parentNode.replaceChild(c[1],c[0])}t(e.styleSheets,"all")});p.attachEvent("onafterprint",function(){for(var a=-1,b;++a<f.length;)f[a][1].parentNode.replaceChild(f[a][0],f[a][1]);for(b in g)s[l].removeChild(g[b]);g={};f=[]})}()})(this,document);@*/
+</script>
+</head>
+<body>
+  <header class="clearfix">
+    <div class="wrap">
+      <h1 class="left"><span>Chen</span> <br />Yangjian</h1>
+      <div id="info">
+        <dl class="contact">
+          <dt>Cellphone: </dt>
+          <dd>+86 138XXXX2877</dd>
+          <dt>Email: </dt>
+          <dd>jakeplus@gmail.com</dd>
+          <dt>Address:</dt>
+          <dd>Yuhang district, Hangzhou City, Zhejiang</dd>
+        </dl>
+        <dl class="file">
+          <dt>From: </dt>
+          <dd>Wenzhou, Zhejiang</dd>
+          <dt>Birth: </dt>
+          <dd>1987.10</dd>
+          <dt>Applying: </dt>
+          <dd>Frontend Developer</dd>
+        </dl>
+      </div>
+    </div>
+  </header>
+  <div class="wrap" id="content">
+    <section id="education" class="clearfix">
+      <h2>Education</h2>
+      <div class="left">
+        <p class="university">Zhejiang University</p>
+        <p class="school">College of Software</p>
+        <p class="specialty">Software Engineering</p>
+        <p class="time-range">
+          <time datetime="2004-09-01">2004.9.</time> -
+          <time datetime="2008-07-01">2008.7.</time>
+        </p>
+      </div>
+      <p class="degree">Bachelor</p>
+      <p>Third Class Scholorship（<time datetime="2007-07-01">2007.</time>）</p>
+      <p>CET-4: 543; CET-6: 568</p>
+      <p>Second Foreign Language: Japanese</p>
+    </section>
+    <section id="affiliation" class="clearfix">
+      <h2>Affiliation</h2>
+      <div class="left">
+        <p class="corp">Hengtian Software</p>
+        <p class="corp-desc">limited company</p>
+        <p class="time-range">
+          <time datetime="2008-07-01">2008.7.</time> -
+        </p>
+      </div>
+      <div class="desc">
+        <p class="degree">Engineer</p>
+        <ol class="experience">
+          <li>Actuate/Jasper Report Developer</li>
+          <li>J2EE Developer</li>
+          <li>DBA (Sybase -&gt; Oracle migration)</li>
+          <li>Flex Developer</li>
+        </ol>
+      </div>
+    </section>
+    <section id="projects" class="clearfix">
+      <h2>Projects</h2>
+      <ol class="projects">
+        <li>
+          <div class="left">
+            <p class="name">Interactive Report Designer</p>
+            <p class="time-range">
+              <time datetime="2010-02-01">2010.2.</time> -
+            </p>
+          </div>
+          <div class="desc">
+            <p>This project has been developed for more than six months.</p>
+            <p>Backend is based on Jasper Report. Developed using Flex</p>
+            <p>Responsibility: Flex developer. Adding new feature, code refactoring, and debug.</p>
+            <ul class="skillset clearfix">
+              <li><a href="http://cyj.me/?s=actionscript">ActionScript</a></li>
+              <li><a href="http://cyj.me/?s=java">Java</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="left">
+            <p class="name">Projects Based on Google App Engine</p>
+            <p class="time-range">
+              <time datetime="2009-07-01">2009.7.</time> -
+            </p>
+          </div>
+          <div class="desc">
+            <p>A fortune teller, <a href="http://direfortune.appspot.com">Direfortune</a>,</p>
+            <p>A bill spliter, <a href="http://xiyuan5hu.appspot.com">Xiyuan</a> and </p>
+            <p>A gallery with brand new design, <a href="http://jakeslomoo.appspot.com">Lomoo</a>.</p>
+            <ul class="skillset clearfix">
+              <li><a href="http://cyj.me/?s=django">django</a> /
+                <a href="http://cyj.me/?s=python">Python</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="left">
+            <p class="name">NMLAB</p>
+            <p class="time-range">
+              <time datetime="2009-05-01">2009.5.</time> -
+              <time datetime="2009-09-01">2009.9.</time>
+            </p>
+          </div>
+          <div class="desc">
+            <p>A simple Content Management System which shares the philosophy of Stacey.</p>
+            <p>Frontend stuff: Web design, Ajax UIs with jQuery.</p>
+            <ul class="skillset clearfix">
+              <li><a href="http://cyj.me/?s=jquery">jQuery</a> /
+                <a href="http://cyj.me/?s=javascript">JavaScript</a></li>
+              <li><a href="http://cyj.me/?s=php">PHP</a></li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section id="interests" class="clearfix">
+      <h2>Interests</h2>
+      <ol class="interests">
+        <li>
+          <div class="label left">
+            <a href="http://cyj.me/#gallery">Drawing</a> /
+            <a href="http://u.youku.com/user_video/id_UODA5NzU2MjQ=.html">Gruitar</a>
+          </div>
+          <div class="desc">
+            <p>Drawing since young, playing guitar almost two years ago.</p>
+          </div>
+        </li>
+        <li><div class="label left">
+            <a href="http://cyj.me/resources/">Frontend Develop</a>
+          </div>
+          <div class="desc">
+            <p>Start learning HTML/CSS at 2006, learned JavaScript later on.</p>
+            <p>jQuery is my first JavaScript library. Has been writing JavaScript's good parts for a while. Mostly about Canvas.</p>
+          </div>
+        </li>
+        <li><div class="label left">Web Design</div>
+          <div class="desc">
+            <p>As a bridge over design and dev.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+  <footer>
+    <div class="wrap clearfix">
+      <div class="left">
+        <span id="right-arrow"></span>
+      </div>
+      <ul class="homepage">
+        <li><a href="http://cyj.me">Homepage</a>（cyj.me）</li>
+        <li><a href="http://cyj.me">Blog</a>（cyj.me）</li>
+      </ul>
+      <p>Chen Yangjian &copy; 2010</p>
+    </div>
+  </footer>
+</body>
+</html>
