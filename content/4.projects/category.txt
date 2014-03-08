@@ -1,0 +1,5 @@
+class: projects
+-
+page_description: A collection of Jake's work
+-
+title: Projects

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    :ghead
+    if $css do
+        foreach $css do
+            <link rel="stylesheet" href="@url" type="text/css" media="screen" />
+        endforeach
+    endif
+  </head>
+  <body class="@class page" id="@slug">
+    :header
+    <div class="wrap">
+      <article id="content">
+	    <h2><a href="@url">@title</a></h2>
+	    @content
+        foreach $children do
+            <section class="@slug clearfix">
+              <h3>@title</h3>
+              <aside>
+                :images
+                if @demo do
+                    @demo
+                endif
+              </aside>
+              <div class="content">@content</div>
+            </section>
+        endforeach
+      </article>
+    </div>
+    :footer
+    if $js do
+        foreach $js do
+            <script type="text/javascript" src="@url"></script>
+        endforeach
+    endif
+    @after-js
+  </body>
+</html>

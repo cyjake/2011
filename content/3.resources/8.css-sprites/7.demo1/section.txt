@@ -1,0 +1,75 @@
+title: Demo 1
+-
+content:
+这个示例来自于 [A List Apart](http://www.alistapart.com/articles/sprites)。
+我们要做的事情就是，把上一节中的图片作 Sprites，做一个看起来还不错的导航栏。最终效果如右图所示：
+
+先把 HTML 搞起来。通常写 HTML 的原则有两个：简介其一、语义化其二。把语义化作为重要准则的原因也有两个，
+SEO 和可用性。因为搜索引擎的爬虫和屏幕阅读器都不会识别通过 CSS 后加的图片、文字，它们只认 HTML。
+代码如右图下方所示。
+
+接下来，配上 CSS。首先，将这个菜单的高宽设置为背景图大小，配上背景图；把 `<li/>` 的默认属性重置掉。
+关于 `position` 的部分说起来容易话长，
+对这方面不熟的童鞋建议看看[《十步走学会 CSS Position》](http://www.barelyfitz.com/screencast/html-training/css/positioning/)。
+简单地说这里的代码就是让每个菜单条目使用绝对定位，方便布置鼠标悬停的效果。
+<pre name="code" class="css">
+#skyline {
+    width: 400px; height: 200px;
+    background: url(test-3.jpg);
+    margin: 10px auto; padding: 0;
+    position: relative;
+}
+#skyline li {
+    margin: 0; padding: 0; list-style: none;
+    position: absolute; top: 0;
+}
+#skyline li, #skyline a {
+    height: 200px; display: block;
+}
+#panel1b {left: 0; width: 95px;}
+#panel2b {left: 96px; width: 75px;}
+#panel3b {left: 172px; width: 110px;}
+#panel4b {left: 283px; width: 117px;}
+</pre>
+
+布置好菜单之后，通过 `a:hover` 加上特效：
+<pre name="code" class="css">
+#panel1b a:hover {
+    background: transparent url(test-3.jpg) 0 -200px no-repeat;
+}
+#panel2b a:hover {
+    background: transparent url(test-3.jpg)
+    -96px -200px no-repeat;
+}
+#panel3b a:hover {
+    background: transparent url(test-3.jpg)
+    -172px -200px no-repeat;
+}
+#panel4b a:hover {
+    background: transparent url(test-3.jpg)
+    -283px -200px no-repeat;
+}
+</pre>
+
+这个例子应用 CSS Sprites 的方式有点特别，经典应用方式是背景图片只指定一次，
+需要的时候再去改 `background-position`。这个做法是个 Workaround，而非 Fix，主要原因是
+IE6 里头的一个 bug：如果 IE 的缓存控制设置为不缓存，每次都去服务器取资源的话，
+背景图会闪（[解决方式](http://ieflicker.com/)）。
+
+下面，我们通过求是设计的博客，来做一个更为纯粹的示例。
+-
+demo:
+<ul id="skyline">
+  <li id="panel1b"><a href="#1"></a></li>
+  <li id="panel2b"><a href="#2"></a></li>
+  <li id="panel3b"><a href="#3"></a></li>
+  <li id="panel4b"><a href="#4"></a></li>
+</ul>
+<pre name="code" class="html">
+&lt;ul id="skyline">
+  &lt;li id="panel1b">&lt;a href="#1">&lt;/a>&lt;/li>
+  &lt;li id="panel2b">&lt;a href="#2">&lt;/a>&lt;/li>
+  &lt;li id="panel3b">&lt;a href="#3">&lt;/a>&lt;/li>
+  &lt;li id="panel4b">&lt;a href="#4">&lt;/a>&lt;/li>
+&lt;/ul>
+</pre>

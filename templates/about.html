@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    :ghead
+  </head>
+  <body class="about">
+    :header
+    <div class="wrap clearfix">
+      <section id="content">
+	    <h1><a href="@root_path">@title, @name</a></h1>
+        <aside class="col six">
+          :images
+        </aside>
+        <article class="badge">
+          <p class="occupation">挨踢从业者，</p>
+          <p class="education">浙大猥琐男，</p>
+          <p class="residence">目前在杭。</p>
+        </article>
+        <article>
+          @content
+          <a href="@root_path/public/docs/resume.html">个人简历</a>
+          <a href="@root_path/public/docs/resume-en.html">Resume</a>
+        </article>
+      </section>
+    </div>
+    :footer
+  </body>
+</html>

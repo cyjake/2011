@@ -1,0 +1,48 @@
+html, body { height: 100%; }
+#board {
+    position: absolute; top: 0; left: 0;
+    overflow: hidden;
+    width: 100%;  min-height: 100%;
+}
+* html #board {
+    height: 100%;
+}
+header nav {
+    position: absolute;
+    z-index: 100;
+}
+header nav li {
+    z-index: 500;
+}
+#board.white { background-color: #fff; }
+#board.black { background-color: #000; }
+#cpanel {
+    position: absolute; right: 20px; top: 20px;
+    background: #ddd;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* ie8 */
+    filter: alpha(opacity=80);	/* ie5-7*/
+    zoom: 1;			/* let ie know that ul/div/p are all blocks. */
+    background: rgba(208, 208, 208, 0.7);
+    padding: 10px; -moz-border-radius: 10px; border-radius: 10px;
+}
+#cpanel > div {
+    margin-bottom: 5px;
+}
+#cpanel td:first-child {
+    color: #333;
+}
+input.text {                    /* #cpanel input[type=text] */
+    width: 32px;
+    border: 1px solid #777;
+    text-align: center;
+}
+input.button {                  /* #cpanel input[type=button] */
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #bbb;
+    padding: 2.5px 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#tips { position: absolute; left: 20px; bottom: 20px; font-size: 90%; color: #777; }

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    :ghead
+    foreach $css do
+        <link rel="stylesheet" href="@url" type="text/css" media="screen" />
+    endforeach
+  </head>
+  <body class="resources sticky" id="@slug">
+    :header
+    foreach $html do
+        @content
+    endforeach
+    if @reference do
+    <div class="wrap">
+      <section id="references">
+        <h2>Reference</h2>
+        @reference
+      </section>
+    </div>
+    endif
+    :footer
+    foreach $js do
+        <script type="text/javascript" src="@url"></script>
+    endforeach
+  </body>
+</html>

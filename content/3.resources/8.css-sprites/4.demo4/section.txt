@@ -1,0 +1,55 @@
+title: Demo 4 - (Marquee) With JavaScript
+-
+content:
+下面，我们做个高级一点的，jQuery 版本的 [`<marquee/>`](http://www.htmlmarquee.com/)。
+我们知道，求是设计的导航栏的背景图是在鼠标悬停（hover）的时候，通过调整
+`background-position` 得到效果。现在呢，就要用 JavaScript 让这个过程慢一点。
+
+实际执行代码请查看本页面源代码末尾的 JavaScript 部分，这里就伪代码介绍一下。
+
+<pre name="code" class="js">
+    var yPosMap = {     // 最独立的办法自然是从 CSS 里头取，但是感觉费力
+        home: [-182, 0],
+        camp: [-260, -78],
+        bookstore: [-286, -104],
+        microblog: [-338, -156],
+        network: [-312, -130]
+    };
+    var timerMap = {};  //  每个动画的定时器应该是独立的
+
+    $marqueemenu.find('a').hover(function() {
+        animate(this, 'show');
+    }, function() {
+        animate(this, 'hide');
+    });
+
+    function animate(block, mode) {
+        clearTimers(clsName);     // 清除正在进行的动画
+        if (reachTargetPosition()) {
+            reset();
+            return;               // 已经到了
+        }
+        timerMap[clsName] = setInterval(function() {
+            pos = getYPos($a);
+            /*
+             * 最关键的语句，CSS Sprites 就是这么回事：
+             */
+            $a.css('background-position', '0 '+(pos+delta)+'px');
+            if (reachTargetPostion()) {
+                clearInterval(timerMap[clsName]);
+                reset();
+            }
+        }, 10);
+    }
+</pre>
+
+-
+demo:
+<div class="marquee">
+  <ul id="qiushid-menu">
+    <li class="home"><a href="http://blog.qiushid.com" title="求是设计会首页">首页</a></li>
+    <li class="bookstore"><a href="http://blog.qiushid.com/bookstore" title="线下活动DesignCamp">读书</a></li>
+    <li class="network"><a href="http://blog.qiushid.com/network" title="网络Network">网络</a></li>
+    <li class="microblog"><a href="http://www.qiushid.com" target="blank" title="微博MicroBlog">微博</a></li>
+  </ul>
+</div>

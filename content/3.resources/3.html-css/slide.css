@@ -1,0 +1,129 @@
+/* layout */
+body {
+    background-color: #888;
+}
+html, body {
+    height: 100%;
+}
+div#head {
+    margin-bottom: 20px;
+}
+div#head h1 {
+    text-align: right;
+    border: none;
+}
+div#head h1 a {
+    color: #fff;
+    font-size: 40px;
+}
+div.container {
+    text-align: left;
+    margin: 0 auto;
+    width: 760px;
+}
+
+/* control */
+div#control {
+    overflow: auto;
+    width: 100%;
+}
+div#control ul {
+    overflow: hidden;
+    list-style: none;
+    float: left;
+}
+div#control ul li {
+    float: left;
+    text-align: center;
+}
+div#control a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0px;
+    margin: 0px 10px;
+    border-bottom: 2px solid #444;
+}
+div#control a:hover, div#control a:active {
+    border-bottom: 2px solid #ddd;
+}
+div#control a#toggle-toc {
+    float: right;
+}
+
+/* toc */
+div#toc {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    display: none;
+    background-color: #dbdbdb;
+    color: #414141;
+    padding: 5px;
+    position: absolute;
+    opacity: 0.8;
+    filter: alpha(opacity =80);	/* in ie6
+				 * http://joseph.randomnetworks.com/archives/2006/08/16/css-opacity-in-internet-explorer-ie/
+				 * http://www.quirksmode.org/css/opacity.html (for further info)
+				 */
+    width: 240px;
+}
+div#toc ul {
+    list-style: none;
+}
+div#toc ul li {
+    font-size: 11px;
+    line-height: 14px;
+}
+div#toc ul li.selected {
+    background-image: url(misc/mark-grey.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 20px;
+}
+div#toc ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* slide */
+div#content {
+    font-size: 14px;
+}
+div.slide {
+    display: none;
+}
+div.selected {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    height: 480px;
+}
+div.slide ul {
+    margin: 5px 20px;
+}
+
+/* style */
+div.slide h2, div.slide h3 {
+    color: #222;
+    font-weight: bold;
+    line-height: auto;
+    padding: 10px 0;
+}
+div.slide h2 {
+    font-size: 48px;
+}
+div.slide h3 {
+    font-size: 32px;
+}
+div.slide p {
+    padding: 5px 0;
+}
+div.slide .center {
+    margin: 150px 0;
+    text-align: center;
+}
+div.slide span {
+    color: gray;
+}

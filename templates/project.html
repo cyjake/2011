@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    :ghead
+  </head>
+  <body class="projects">
+    :header
+    <div class="wrap">
+      <section id="content" class="clearfix">
+        <h1><a href="@url">@title</a></h1>
+        <p class="summary">@summary</p>
+        <div class="col two" id="projects-navigator">
+          :previous-page
+          :next-page
+        </div>
+        <article class="col six">@content</article>
+        <figure class="four">
+          <a href="@demourl" target="_blank">
+            <p>@page_description</p>
+            <datetime>@date</datetime>
+            <img src="@thumb" alt="@title"/>
+          </a>
+        </figure>
+      </section>
+      if @reference do
+      <section id="references">
+        <h2>References</h2>
+        @reference
+      </section>
+      endif
+      <p class="upper-category">
+        <a href="http://@base_url/projects">
+          <span class="up-arrow"></span>
+          Projects
+        </a>
+      </p>
+    </div>
+    :footer
+  </body>
+</html>

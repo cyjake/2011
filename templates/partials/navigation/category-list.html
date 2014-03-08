@@ -1,0 +1,12 @@
+if $children do
+  foreach $children do
+  <article class="col four">
+    <a href="@url" class="clearfix">
+	  <h2>@title</h2>
+      <time>@date</time>
+	  if @thumb do <img src="@thumb" class="project-thumb" alt=""> endif
+    </a>
+  </article>
+  endforeach
+</ul>
+endif

@@ -1,0 +1,25 @@
+page_description: 鹿木（lomoo）
+-
+title: 鹿木
+-
+date: 2009, Nov–
+-
+summary: 我的家
+-
+reference:
+1. Python
+2. [Django](http://djangoproject.com)
+3. [Flickr](http://flickr.com)
+4. [Google App Engine](http://code.google.com/appengine/)
+-
+demourl: http://jakeslomoo.appspot.com
+-
+content:
+[鹿木](http://jakeslomoo.appspot.com)是一个构建于 App Engine 上的图片分享程序，使用 Python 开发。开发框架采用了 django，并应用到了许多开源的库，比如 PyRSS2Gen 等。
+
+初衷是有个不一样的相册，图片展示的风格是尽量最大化，在大显示器上得到最具冲击力的效果。因为一直没有好器材好技术，目前上佳的图片寥寥无几。
+
+鹿木其名，取自作者的家乡，浙江省瑞安市鹿木乡。名字典出何故如今恐已无从考。
+鹿木是 MIT 协议授权的，[开放源代码](http://code.google.com/p/lomoo/)。
+
+[lomoo](http://jakeslomoo.appspot.com) is an album developed with Python and Django on Google App Engine. It's [open source](http://code.google.com/p/lomoo).

@@ -1,0 +1,7 @@
+title: Canvas Clock
+-
+date: 2010, Apr–
+-
+reference:
+1. [Mac Dev Center: Webkit DOM Programming Topics: Using the Canvas](http://developer.apple.com/mac/library/documentation/AppleApplications/Conceptual/SafariJSProgTopics/Tasks/Canvas.html)
+2. [Drawing Graphics with Canvas - MDC](https://developer.mozilla.org/en/Drawing_Graphics_with_Canvas)

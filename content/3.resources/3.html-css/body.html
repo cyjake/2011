@@ -1,0 +1,247 @@
+<div id="head">
+  <div class="container">
+    <h1><a href=".">HTML + CSS</a></h1>
+    <div id="control">
+      <ul>
+	    <li><a href="#" id="goto-first">First</a></li>
+	    <li><a href="#" id="goto-previous">Previous</a></li>
+	    <li><a href="#" id="goto-play">Play</a></li>
+	    <li><a href="#" id="goto-next">Next</a></li>
+	    <li><a href="#" id="goto-last">Last</a></li>
+      </ul>
+      <a href="#" id="toggle-toc">Table of Contents</a>
+    </div>
+    <div id="toc"></div>
+  </div>
+</div>
+<div class="container">
+  <div class="slide">
+    <h2 class="center">Let's start from CSS.</h2>
+  </div>
+  <div class="slide">
+    <h2>What is CSS?</h2>
+    <p>Cascading Style Sheets. 级联样式表单。</p>
+    <h3>Nothing New.</h3>
+    <p>Generally accepted. Widely used.</p>
+    <ul>
+      <li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+      <li><a href="http://en.wikipedia.org/">Wikipedia</a></li>
+      <li><a href="http://cn-pc-hz1662:8080/worklog/">IBT Worklog</a></li>
+      <li>etc.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>Why is CSS used?</h2>
+    <p>Several reasons:</p>
+    <ul>
+      <li>separation of content/structure from presentation.</li>
+      <li>independent format file. once, and for all.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>What is HTML then?</h2>
+    <h3>Brief history</h3>
+    <p>developed by Tim Berners-Lee for more convenient file sharing and cross-linking. It stands for Hypertext Markup Language. A language which is meant to describe the structure and content of your document.</p>
+    <h3>When did &lt;table/&gt; used for layout start?</h3>
+    <p>Two reasons:</p>
+    <ul>
+      <li>HTML is weak, in doing layout.</li>
+      <li>CSS doesn't come along. and after it did show up, it does not involve capability of layout. and after it did has some, little, it's not well supported.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>So why this session?</h2>
+    <h3>To do the web the right way!</h3>
+    <p>It's all cliche though.</p>
+  </div>
+  <div class="slide">
+    <h2>Meet the standards</h2>
+    <ul>
+      <li><a href="http://validator.w3.org/">HTML 4.0 / XHTML 1.0</a></li>
+      <li>CSS 2.0?</li>
+    </ul>
+    <h3>But,</h3>
+    <p><a href="http://blog.dotnil.org/70937.html">Dogma vs. Pragmatism</a></p>
+    <ul>
+      <li><a href="http://giveupandusetables.com/">Give Up and Use Tables</a></li>
+      <li><a href="http://shouldiusetablesforlayout.com/">Should I Use Tables For Layout?</a></li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2 class="center">HTML: Past &amp; Present</h2>
+  </div>
+  <div class="slide">
+    <h2>Current problems</h2>
+    <h3>HTML Past: Whatever Looked Good</h3>
+    <ul>
+      <li>use table to layout. <span>well, that's not the problem. the problem is, quite a few of table involved.</span></li>
+      <li>inline &lt;font&gt;</li>
+      <li>table against simple lists.</li>
+      <li>&amp;ensp; and &amp;nbsp;</li>
+      <li><a href="http://en.wikipedia.org/wiki/Framing_(World_Wide_Web)">frameset</a>. several reasons why it's bad:
+	<ul>
+	  <li>breaks link between content and url.</li>
+	  <li>hard to bookmark.</li>
+	  <li>poor cross browser support</li>
+	  <li>copy infringement.</li>
+	  <li>user may reach the frame rather than the frameset whether intended or navigated by search engine.</li>
+	  <li>messy scroll bars.</li>
+	  <li>deprecated in XHTML 1.0, removed in XHTML 1.1 with a replacement. XFrames.</li>
+	</ul>
+      </li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>What is recommended then?</h2>
+    <h3>HTML Present: Scaffolding for CSS</h3>
+    <p>back to our title: HTML + CSS. Introducing the two mighty tag: &lt;div&gt; &amp; &lt;span&gt;</p>
+    <blockquote>
+      <p>The &lt;div&gt; tag and the &lt;span&gt; tag are like empty vessels that you fill with content.</p>
+    </blockquote>
+    <h3>where the hell is the so-called standard anyway?</h3>
+    <ul>
+      <li>use CSS to style page elements. <span>benifits.</span></li>
+      <li>write neat HTML. only things you need.</li>
+      <li>try to layout with &lt;div&gt; + CSS.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>A checklist.</h2>
+    <ul>
+      <li>your markup is <em>valid</em>. <span>which means it has been checked against the standard.</span></li>
+      <li>your markup is <em>semantic</em>. <span>have appropriate HTML elements to give your content meaning.</span></li>
+      <li>your markup is <em>accessible</em>. <span>can be navigated &amp; read by everyone.</span></li>
+      <li>your markup is <em>separated</em>. <span>the behavior and presentation has been removed.</span></li>
+      <li>your site fails <em>gracefully</em>. <span>will not be fked up in browsers such as ie6.</span></li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>Proof</h2>
+    <p>well, sort of. Assume you want a page looks like this.</p>
+    <img src="whatyouwant.png" class="" alt="what you want" />
+  </div>
+  <div class="slide">
+    <h2>spaghetti</h2>
+    <img src="spaghetti.png" class="" alt="spaghetti" />
+  </div>
+  <div class="slide">
+    <h2>a rather neet one</h2>
+    <img src="neet.png" class="" alt="neet" />
+  </div>
+  <div class="slide">
+    <h2>One more thing</h2>
+    <p>if HTML 4.01 Transitional, </p>
+    <pre>
+      &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.
+	w3.org/TR/html4/loose.dtd"&gt;
+    </pre>
+    <p>if XHTML Transitional, </p>
+    <pre>
+      	&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.
+	w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+	&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+    </pre>
+    <p>If you want more detail, please refer to my blog post `<a href="http://dotnil.yo2.cn/web/64428.html">about a problem I once encountered</a>' and the famous <a href="http://www.quirksmode.org/">Quirksmode.org</a>(actually it features a lot of things rather than several compatibility tables).</p>
+  </div>
+  <div class="slide">
+    <h2 class="center">How about CSS?</h2>
+  </div>
+  <div class="slide">
+    <h2>the structure of CSS.</h2>
+    <img src="css_context.png" class="" alt="CSS Context" />
+  </div>
+  <div class="slide">
+    <h2>Where to write style?</h2>
+    <h3>external file</h3>
+    <pre>
+      &lt;link rel="stylesheet" type="text/css" href="css/global.css"&gt;
+    </pre>
+    <h3>interal style</h3>
+    <pre>
+      &lt;head&gt;&lt;style type="text/css"&gt;@import url(base.css)&lt;/style&gt;
+    </pre>
+    <h3>inline style</h3>
+    <pre>
+      &lt;p style="padding: 5px 0;"&gt;Hello world.&lt;p&gt;
+    </pre>
+  </div>
+  <div class="slide">
+    <h2>selector</h2>
+    <p>by</p>
+    <h3>tag. <span>Page-Wide Styling</span></h3>
+    <pre>
+      h2 { font-weight: normal; }
+    </pre>
+    <h3>class. <span>Prinpoint Control</span></h3>
+    <pre>
+      .clear { clear: both; }
+    </pre>
+    <h3>id. <span>Specific Page Elemets</span></h3>
+    <pre>
+      #banner { background: #CC0000; }
+    </pre>
+  </div>
+  <div class="slide">
+    <h2>let's move on</h2>
+    <ul>
+      <li>Acestor. <span>an HTML tag that wraps around another tag is its ancestor</span></li>
+      <li>Descedent. <span>A tag inside one or more tags is a descendent.</span></li>
+      <li>Parent. <span>A parent tag is the closest ancestor of another tag.</span></li>
+      <li>Child. <span>A tag that's directly enclosed by another tag is a child.</span></li>
+      <li>Sibling. <span>Tags that are children of the same tag are called siblings, just like brothers and sisters. </span></li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>chaining sample</h2>
+    <h3>select specific item</h3>
+    <ul>
+      <li>html body ul li a</li>
+      <li>p .intro a { color: yellow; }</li>
+      <li>p.intro a { color: yellow; }</li>
+    </ul>
+    <h3>Styling multiple element</h3>
+    <ul>
+      <li>h1, h2, h3, h4, h5, h6 { color: #F1CD33; }</li>
+      <li>h1, p, .copyright, #banner { color: #F1CD33; }</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>Inheritance &amp; Cascade</h2>
+    <p>will be discussed in detail with samples later.</p>
+  </div>
+  <div class="slide">
+    <h2>CSS applied</h2>
+    <h3>Formatting text</h3>
+    <ul>
+      <li>font</li>
+      <li>color</li>
+      <li>text-decoration</li>
+      <li>line-height</li>
+      <li>text-align</li>
+      <li>etc.</li>
+    </ul>
+  </div>
+  <div class="slide">
+    <h2>Box mode</h2>
+    <img src="box.png" class="" alt="Box" />
+  </div>
+  <div class="slide">
+    <h2 class="center">a few samples.</h2>
+  </div>
+  <div class="slide">
+    <h2 class="center">mission one: style link.</h2>
+  </div>
+  <div class="slide">
+    <h2 class="center">mission two: make a navigator.</h2>
+  </div>
+  <div class="slide">
+    <h2 class="center">mission three: layout.</h2>
+  </div>
+  <div class="slide">
+    <h2 class="center">Questions?</h2>
+  </div>
+  <div class="slide">
+    <h2 class="center">Thank you.</h2>
+  </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

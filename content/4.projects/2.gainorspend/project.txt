@@ -1,0 +1,21 @@
+page_description: 记帐本（gainorspend）
+-
+title: 记帐本
+-
+date: 2009, June–
+-
+summary: 第一个 Python Webapp
+-
+content:
+有段时间很想记账，不想“精通 Excel”，刚好想学 Python 和 Google App Engine，因此觉得做个记帐本练练手估计不错。
+
+以此为开端，一发而不可收。
+
+最开始了解的是 webapp 框架，后来跟风用 django，最大的原因是这名字很帅。
+-
+demourl: http://gainorspend.appspot.com
+-
+reference:
+1. Python
+2. [Django](http://djangoproject.com)
+3. [Google App Engine](http://code.google.com/appengine/)

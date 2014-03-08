@@ -1,0 +1,24 @@
+title: CSS
+-
+content:
+CSS 的中文意思，前面介绍过了。对于它的意义、简单语法等，可以参考我的 [HTML & CSS](/resources/html-css)。
+
+先说基本，`background` 属性的语法。示例声明（来自[鹿木](http://jakeslomoo.appspot.com)）。
+这是一个简写。在 CSS 中这种简写很多，使用最多的就是 padding 和 margin 的语法。
+
+    background: #000 url("/picture/3003_m.jpg") no-repeat scroll center top;
+
+接着说背景声明。详细属性分为：
+
+- `background-color` 各种颜色；
+- `background-image` 背景图，可以是 `url()`，也可以是 BASE64 编码的图片；
+- `background-repeat` 重复模式，no-repeat, repeat, repeat-x, repeat-y
+- `background-attachment` 是否跟随页面滚动滚动，scroll, fixed
+- `background-position`
+
+上述简写便是以这个顺序。详细语法可以参考 [w3school](http://www.w3schools.com/css/css_background.asp)。
+我们要讲的重头是 `background-position`。它的值的模式为 `xpos ypos`。
+`xpos` 可以是 left, center, right, x% 或者实际的像素单位的坐标；
+`ypos` 则是 top, middle, bottom, y% 或者实际坐标。
+
+了解这个之后，我们就可以做个示例了。

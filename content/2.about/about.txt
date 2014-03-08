@@ -1,0 +1,19 @@
+page_description: A collection of Chen Yangjian's work
+-
+title: About
+-
+content:
+
+2004 年来到杭州求学，毕业之后没有返乡。码农，喜欢画画、按快门、弹吉他、看纸质小说等各种扮文青行径。
+“志趣广博”，但一上场便露馅，乒乓球、台球、足球、篮球都会打（踢）一点；“博闻强识”，
+例如 PHP、Perl、Python 等 P 字辈编程语言都写过不少，但面试官一问起，便支支吾吾辨不清个所以然。
+
+如果你对我感兴趣，不妨也围观下[我的博客](http://blog.cyj.me)，或者我的[快门集](http://jakeslomoo.appspot.com)，
+甚至是[我的代码们](http://code.google.com/u/jakeplus/)。当然，我在网络上的坑还有很多，狡兔三窟嘛。
+
+Chen Yangjian is an IT practitioner in Hangzhou. He graduated from Zhejiang University in 2008 and have been working as several roles in IT industry since then. Developed a blog system in PHP, scripted lots of Perl, wrote some SQL and PL/SQL, designed a few reports using both Actuate and iReport, programmed a lot Java to deal with FTP/Excel etc., and have been developing Python for a while.
+
+Currently he is occupied as a Flex developer of stastestreet.com.
+
+In the mean time, Yangjian has been learning acoustic guitar and painting on and off. There will be some work shown here too.
+

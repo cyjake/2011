@@ -1,0 +1,23 @@
+page_description: 西园五虎
+-
+title: 西园五虎
+-
+date: 2009, Aug–
+-
+summary: 饭局助手
+-
+content:
+公司里多有饭局，同事间一起吃饭，买单的时候不 AA 会尴尬，AA 又麻烦，钞票递来递去，找零成了麻烦。
+于是轮流付，然而饭局参与人员多有变更，记忆便不太靠谱。标哥弄了个 Excel 表，我画蛇添足，
+做了这个小程序用来自动化。
+
+原先是 Java 写的，可以到处 Excel，改成 Python 之后，还没试过 Python 的 Office 文档操作库。
+
+理论上，任何有 Google 帐号的人都可以建立、管理自己的小饭团。人格保证，本程序不会对记录的用户邮箱做任何坏事。
+-
+demourl: http://xiyuan5hu.appspot.com
+-
+reference:
+1. Python
+2. [Django](http://djangoproject.com)
+3. [Google App Engine](http://code.google.com/appengine/)

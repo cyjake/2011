@@ -1,0 +1,26 @@
+<div class="wrap">
+  <h1><a href="@url">豆箕</a></h1>
+  <div id="detail">
+    <form onsubmit=" return false; ">
+      <input type="text" name="keyword" size="70" placeholder="ISBN/ID" class="virgin"/>
+      <input type="submit" value="add" />
+      <div id="feedback"></div>
+    </form>
+    <ul id="books"></ul>
+  </div>
+  <ul class="book-menu hidden">
+    <li id="at-douban"><a href="" target="_blank">@douban</a></li>
+    <li id="delete"><a href="#">delete</a></li>
+  </ul>
+</div>
+<script type="text/html" id="book_template">
+  <img src="<%=cover%>">
+  <div class="desc">
+    <div class="title"><a href="<%=link%>" target="_blank">《<%=title%>》</a></div>
+    <div><%=author%></div>
+    <div class="price">&yen; <%=price%></div>
+    <div><%=publisher%></div>
+    <p><%=summary%></p>
+  </div>
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

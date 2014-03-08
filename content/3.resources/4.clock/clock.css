@@ -1,0 +1,20 @@
+footer {
+    position: static !important;
+}
+#clock-box {
+    position: relative;
+    margin: 100px auto;
+}
+#clock-box canvas {
+    position: absolute;
+    left: 0; top: 0;
+}
+#clock{
+    z-index: 10;
+}
+#minute-hand {
+    z-index: 60;
+}
+#second-hand {
+    z-index: 80;
+}

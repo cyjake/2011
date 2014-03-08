@@ -1,0 +1,22 @@
+title: Summary
+-
+content:
+看完本文，了解了这四个例子之后，我想你对 CSS Sprites 应该有很清楚的认知了。
+
+最后广告一下：做前端开发，目前为止最好用的工具依然是
+[Firefox](getfirefox.com) + [Firebug](http://getfirebug.com/) 组合。
+[Google Chrome](www.google.com/chrome)
+的开发者工具也已经越来越完善，但是小细节总有不愉处，可能是我习惯了前者的缘故。
+IE9 如今成了 Underdog，但是也在慢慢赶上。此外，最好整个 IE Tester。
+当然，如果你的机器上还有 IE6，直接测也行。不过，
+
+你的电脑上还有 [IE6](http://isie6dead.com/)？
+-
+demo:
+<div id="ie6">
+  <a href="http://ie6funeral.com/">
+    <p class="farewell">R.I.P.</p>
+    <p class="name">Internet</p>
+    <p class="name"><span>E</span>xplorer Six</p>
+  </a>
+</div>

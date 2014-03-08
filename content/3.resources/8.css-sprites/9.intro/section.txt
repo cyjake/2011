@@ -1,0 +1,37 @@
+title: What is CSS Sprites
+-
+caption: Example of sprites.
+-
+content:
+Web 是个很神奇的地方，很多时候会给你“OMG! The old things is new again!”的错觉。
+比如初衷是数据表格的 `<table/>` 标签，会被用来取得更有弹性的布局效果；
+比如 `<h1/>` 还是 `<p class="title"/>` 作为网站的标题，都可以成为争辩的话题；
+比如 `<canvas/>` 和 Flash 的比较。
+
+CSS Sprites 也是如此。
+
+我们先把 CSS Sprites 这名字拆分一下，CSS 和 Sprites，CSS 么大家都知道，Cascading Styles Sheets，层叠样式表。
+只不过它的层叠算法有的时候很奇怪，代码结构看着也不想表。但这不妨碍你把它去繁取简，
+理解为样式（Style）。事实上在 Flex 里头，Adobe 就是这么做的。
+
+而 Sprites 呢？查下字典，意为小精灵。在计算机图形的世界，
+[这个词的意思](http://en.wikipedia.org/wiki/Sprite_%28computer_graphics%29)
+是一张二维的图片，用来嵌入到场景当中。通常它是由多张小图拼成的。同样，在 ActionScript 里面，
+有个 `Class` 唤作
+[Sprite](http://www.adobe.com/livedocs/flash/9.0/ActionScriptLangRefV3/flash/display/Sprite.html)。
+采取这种做法的原因，跟现在一样，是
+[速度](http://www.reddit.com/r/programming/comments/d1b7w/til_about_css_sprites/c0wtlfs)。
+把一张大图载入内存，每次重绘的时候只改变它的显示位置，比每次重绘都把图片数据搞来搞去要经济很多。
+
+而两个词结合起来，就是本文要说的，使用 CSS 应用古老的 Sprites 技术。在开始之前，我们先了解一下为什么。
+
+在 YUI 的 Yslow 网站优化工具评分标准里头，有一项重要的评分标准是
+[减少资源请求次数](http://yuiblog.com/blog/2006/11/28/performance-research-part-1/)。
+网页上各种菜单的图标，布局里的背景图片，
+按钮等等，可以将这些图片弄到一张大图上，再在 CSS 中通过 `background-position` 制定需要显示的图片位置。
+也就是让浏览器自己去调整显示结果，取得“抠”图的效果。它是一项网页优化的技术。
+
+是否要使用这项技术已经不是个问题了，它无处不在。
+
+【<time datetime="2010-08-15">8月15日</time>】有趣的是，在笔者写本文的时候，
+CSS-Tricks 也[发了篇博文](http://css-tricks.com/css-sprites/)。在“为什么”的部分说的比较清楚。

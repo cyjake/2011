@@ -1,0 +1,36 @@
+title: Demo 3 - (Blink) With JavaScript
+-
+content:
+A List Apart 在几年后[又发一文](http://www.alistapart.com/articles/sprites2/)，
+加入了 JavaScript 的部分。
+使用 jQuery 的 `.fadeIn(), slideDown()` 等 UI 方面的方法，来模拟淡入淡出等效果。
+原文的示例代码不很清爽，就不再转用。下面是参考
+[`hover` 文档](http://api.jquery.com/hover/)
+做的求是博客导航栏的基础上制作的示例。
+
+有没有 jQuery is the new `<blink/>` 的错觉？廉价的特效，廉价的代码：
+<pre name="code" class="js">
+    $("#qiushid-menu").find("a").hover(function() {
+        $(this).fadeOut(500, function() {
+            $(this).fadeIn(500);
+        });
+    }, function() {
+        $(this).fadeIn(100);
+    });
+</pre>
+
+这么做的问题也很明显。如果用户玩导航栏，在那上面划来划去，之前的淡入淡出效果并不会消失，
+而是慢慢做完。后果就是，鼠标甩过去之后导航栏闪个不停。修正的方法是每次
+`mouseenter`、`mouseleave` 的时候判断是否正在特效进行中，如果是就清除。
+下面的例子思路跟这个是一样的，所以这个例子的方法我就不再说了。
+
+-
+demo:
+<div class="blink">
+  <ul id="qiushid-menu">
+    <li class="home"><a href="http://blog.qiushid.com" title="求是设计会首页">首页</a></li>
+    <li class="bookstore"><a href="http://blog.qiushid.com/bookstore" title="线下活动DesignCamp">读书</a></li>
+    <li class="network"><a href="http://blog.qiushid.com/network" title="网络Network">网络</a></li>
+    <li class="microblog"><a href="http://www.qiushid.com" target="blank" title="微博MicroBlog">微博</a></li>
+  </ul>
+</div>
