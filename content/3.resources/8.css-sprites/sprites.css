@@ -1,0 +1,148 @@
+/*
+ * http://kuler.adobe.com/#themeID/975441
+ */
+footer {
+    position: static !important;
+}
+body#css-sprites{
+    font-size: 13px;
+}
+a:hover { text-decoration: none; }
+#content p a:hover { text-decoration: underline; }
+#content p a { color: #e50039; }
+article.wrap { text-align: left; }
+section { margin: 20px 0; }
+section aside { float: right; width: 400px; margin-left: 20px; }
+section aside figure { border: 1px solid #ccc; padding: 5px; }
+section .content { margin-right: 420px; }
+h2, h3 {
+    font-family: 'Lobster', Helvetica, Arial;
+    line-height: normal;e
+}
+h2, h2 a { color: #310037; }
+h3, h3 a { color: #e50039; }
+h2 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+article p {
+    font-size: 12px;
+}
+blockquote {
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #e3da91;
+}
+body#css-sprites ul { margin: 10px 10px 10px 30px; }
+pre, code { font-family: consolas; }
+pre { margin: 0; padding: 0; }
+
+section.css aside { float: left; margin: 0 20px 0 0; }
+section.css .content { margin: 0 0 0 420px; }
+
+/* demo1 */
+#skyline {
+    width: 400px; height: 200px;
+    background: url(test-3.jpg);
+    position: relative;
+    margin: 0 !important;
+}
+#skyline li {
+    margin: 0; padding: 0; list-style: none;
+    position: absolute; top: 0;
+}
+#skyline li, #skyline a {
+    height: 200px; display: block;
+}
+#panel1b {left: 0; width: 95px;}
+#panel2b {left: 96px; width: 75px;}
+#panel3b {left: 172px; width: 110px;}
+#panel4b {left: 283px; width: 117px;}
+#panel1b a:hover {
+    background: transparent url(test-3.jpg) 0 -200px no-repeat;
+}
+#panel2b a:hover {
+    background: transparent url(test-3.jpg)
+    -96px -200px no-repeat;
+}
+#panel3b a:hover {
+    background: transparent url(test-3.jpg)
+    -172px -200px no-repeat;
+}
+#panel4b a:hover {
+    background: transparent url(test-3.jpg)
+    -283px -200px no-repeat;
+}
+
+/* demo2 */
+#qiushid-menu {
+    height:30px;
+    list-style:none outside none;
+    margin:0;
+    padding: 10px 0 5px 10px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+#qiushid-menu li {
+    display:inline;
+    float:left;
+    border-right: 1px solid #fff;
+    width:85px;
+}
+#qiushid-menu li a {
+    background:url("qiushid-navitems.gif") no-repeat scroll 0 -468px transparent;
+    display:block;
+    float:left;
+    height:26px;
+    text-indent:-999em;
+    width:85px;
+}
+#qiushid-menu li.home a { background-position: 0 -182px; }
+#qiushid-menu li.home a:hover { background-position: 0 0; }
+#qiushid-menu li.camp a { background-position:0 -260px; }
+#qiushid-menu li.camp a:hover { background-position:0 -78px; }
+#qiushid-menu li.bookstore a { background-position:0 -286px; }
+#qiushid-menu li.bookstore a:hover { background-position:0 -104px; }
+#qiushid-menu li.microblog a { background-position: 0 -338px; }
+#qiushid-menu li.microblog a:hover { background-position: 0 -156px; }
+#qiushid-menu li.network a { background-position: 0 -312px; }
+#qiushid-menu li.network a:hover { background-position: 0 -130px; }
+
+#naked-menu li { display: inline; float: left; margin-right: 1px; padding: 0 20px 0 35px;  }
+
+.marquee #qiushid-menu li.home a:hover { background-position: 0 -182px; }
+.marquee #qiushid-menu li.camp a:hover { background-position:0 -260px; }
+.marquee #qiushid-menu li.bookstore a:hover { background-position:0 -286px; }
+.marquee #qiushid-menu li.microblog a:hover { background-position: 0 -338px; }
+.marquee #qiushid-menu li.network a:hover { background-position: 0 -312px; }
+
+#snook-menu li { float:left; width:100px; text-align:center; list-style: none !important; }
+#snook-menu li a {display:block;padding:5px 10px;height:100%;color:#FFF;text-decoration:none;border-right:1px solid #FFF;}
+#snook-menu a {background:url(snook-bg.jpg) repeat -20px 35px;}
+
+#ie6 { text-align: center; padding: 20px 0; }
+#ie6 p {
+    font-family: "IM Fell DW Pica";
+    text-shadow: #ddd 2px 2px 2px;
+}
+#ie6 p.farewell {
+    color: #ffcc19;
+    font-size: 60px;
+    line-height: 40px;
+}
+#ie6 p.name, #ie6 p.version {
+    color: #ff7f00;
+    font-size: 50px;
+    line-height: 30px;
+}
+#ie6 p.name span {
+    text-shadow: none;
+}

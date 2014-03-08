@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    :ghead
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="@root_path/public/docs/js/jquery.masonry.min.js"></script>
+  </head>
+  <body class="home">
+    :header
+    <div class="wrap clearfix">
+      <section class="wrap" id="content">
+	    <h1><a href="@root_path">@name</a></h1>
+        <p class="age">80后，</p>
+        <p class="current">为车为房为老婆努力，</p>
+        <p class="dream">人生理想赚很多钱，</p>
+        <p class="lifegoal">然后办个学校。</p>
+      </section>
+      <section id="gallery">
+        foreach $images do
+        <article class="col four">
+          <a href="@url" class="clearfix">
+	        <img src="@url" alt="@name">
+          </a>
+        </article>
+        endforeach
+      </section>
+    </div>
+    :footer
+    <script type="text/javascript">
+      $(window).load(function() { $("#gallery").masonry({ singleMode: true }); });
+    </script>
+  </body>
+</html>

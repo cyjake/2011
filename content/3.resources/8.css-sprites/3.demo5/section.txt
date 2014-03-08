@@ -1,0 +1,52 @@
+title: Demo 5 - jQuery.animate()
+-
+content:
+我们的示例到这还没结束。
+
+jQuery 自带了个 [`.animate()`](http://api.jquery.com/animate/)，但是对个别 CSS
+属性的动画支持并不好。有达人做了个
+[jQuery Bg Pos 补丁](http://exteenscript.googlecode.com/files/jquery.bgpos.js)
+让 jQuery 可以以 `background-position` 做动画。实际效果可以看右方示例。
+有没有觉得示例四很有重复发明轮子的嫌疑？
+
+详细内容，不妨移步
+[Snook 的博文](http://snook.ca/archives/javascript/jquery-bg-image-animations/)
+和[他的示例](http://snook.ca/technical/jquery-bg/)。这里简单讲述一下用法。
+
+首先要在页面上引入 jQuery 与 jQuery.bgPos 插件。后者的内容并不多，
+不妨把它并入你的网站的主 JavaScript 文件里头去。
+<pre name="code" class="html">
+lt;script type="text/javascript" src="jquery-1.4.2.min.js">lt;/script>
+lt;script type="text/javascript" src="jquery.bgpos.js">lt;/script>
+</pre>
+
+然后是使用：
+<pre name="code" class="js">
+    $('#snook-menu').find('a')
+        .css( {backgroundPosition: "-20px 35px"} )
+        .mouseover(function(){
+            $(this).stop().animate({backgroundPosition:"(-20px 94px)"},
+                                   {duration:500})
+        })
+        .mouseout(function(){
+            $(this).stop().animate({backgroundPosition:"(40px 35px)"},
+                                   {duration:200, complete:function(){
+                $(this).css({backgroundPosition: "-20px 35px"})
+            }})
+        });
+</pre>
+
+为需要特效的空间注册鼠标移入移出的响应函数，也可以使用前面示例的 `.hover()` 简写。
+重点代码是 `.animate()` 的参数部分。第一个就是特效的结束值，`.animate()`
+会根据这个值计算应该如何动画，详细的过程与示例四的 `animate()` 函数相仿。
+
+第二个（`{duration:200, complete:function(){}}`）是其他参数，前者是动画的持续时间，
+后者是当动画完成之后的回调。示例中的回调将控件重置，主要是针对动画结束背景图位置有偏差的情况。
+-
+demo:
+<ul id="snook-menu">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+

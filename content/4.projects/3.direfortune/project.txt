@@ -1,0 +1,19 @@
+page_description: 装神弄鬼……
+-
+title: 袁天罡称骨术
+-
+date: 2009, Oct–
+-
+summary: 小程序
+-
+content:
+根据维基百科相关介绍做的[算命小工具](http://direfortune.appspot.com/)，把介绍的算式自动化而已。[開放源代碼](http://code.google.com/p/direfortune/)。
+-
+demourl: http://direfortune.appspot.com
+-
+reference:
+1. Python
+2. [Google App Engine](http://code.google.com/appengine/)
+3. [Source Code](http://code.google.com/p/direfortune/)
+4. [称骨算法](http://zh.wikipedia.org/wiki/%E8%A2%81%E5%A4%A9%E7%BD%A1%E7%A7%A4%E9%AA%A8%E8%A1%93)
+

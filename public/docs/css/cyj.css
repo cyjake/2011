@@ -1,0 +1,442 @@
+/**
+ * Learned a lot from desandro.com.
+ */
+
+/* Copyright (c) 2009, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.net/yui/license.txt version: 3.0.0b1 build: 1160 */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* HTML5 block items */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    overflow: visible;
+}
+.col { float: left; margin: 0px 0px 0px 20px; padding: 0px; }
+.col .col { margin: 0px; }
+
+.one { width: 60px; }
+.two { width: 140px; }
+.three { width: 220px; }
+.four { width: 300px; }
+.five { width: 380px; }
+.six { width: 460px; }
+.seven { width: 540px; }
+.eight { width: 620px; }
+.nine { width: 700px; }
+.ten { width: 780px; }
+.eleven { width: 860px; }
+.twelve { width: 940px; }
+
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    visibility: hidden;
+    width: 0px;
+}
+
+body {
+    text-align: center;
+    font-family: 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background-color: #eee;
+}
+header {
+    text-align: left;
+    padding-top: 20px;
+}
+nav {
+    position: relative;
+    font-size: 17px;
+    line-height: 22px;
+}
+body.projects nav .projects a, body.resources nav .resources a, body.about nav .about a, body.home nav .home a {
+    color: #fff;
+}
+body.projects nav .projects, body.resources nav .resources, body.about nav .about, body.home nav .home {
+    background-color: #222;
+}
+/* theme: http://kuler.adobe.com/#themeID/955987 */
+nav li.home a:hover {
+    color: #a60a27;
+}
+nav li.resources a:hover {
+    color: #ded476;
+}
+nav li.projects a:hover {
+    color: #d98e04;
+}
+nav li.about a:hover {
+    color: #d95525;
+}
+nav li.home {
+    font-weight: 800;
+}
+nav li.home span {
+    font-weight: 100;
+}
+nav a:hover {
+    text-decoration: none;
+}
+nav ol {
+    font-weight: 600;
+    width: 960px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    position: relative;
+}
+nav ol a {
+    color: #555;
+}
+nav ol li {
+    color: #EEEEEE;
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    padding: 0 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+}
+nav ol li.rss {
+    background: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+}
+/**** RSS Icon ****/
+.rss a {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: #F90;
+    position: relative;
+    overflow: hidden;
+    text-indent: -9999px;
+    border: 2px solid;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+.rss a span {
+    display: block;
+    position: absolute;
+}
+.rss a .dot {
+    width: 3px;
+    height: 3px;
+    left: 0;
+    top: 10px;
+    background: #FFF;
+    -webkit-border-radius: 1.5px;
+       -moz-border-radius: 1.5px;
+            border-radius: 1.5px;
+}
+.rss a .ring {
+    border: 3px solid #FFF;
+}
+.rss a .inside {
+    width: 10px;
+    height: 10px;
+    left: -8px;
+    top: 5px;
+    -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+            border-radius: 7px;
+}
+.rss a .outside {
+    width: 20px;
+    height: 20px;
+    left: -13px;
+    top: 0px;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+}
+.rss a { background: #222; border-color: #222; }
+.rss a:hover { background: #F90; border-color: #F90; }
+.rss a:hover .dot { background: #FFF; }
+.rss a:hover .ring { border-color: #FFF; }
+
+body h1 {
+    border-bottom: 1px solid #eee;
+    line-height: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+body h1 a {
+    font-size: 60px;
+    color: #555;
+}
+body h1 a:hover {
+    color: #d98e04;
+    text-decoration: none;
+}
+#content {
+    text-align: left;
+    font-size: 12px;
+    margin: 50px 0;
+}
+#content p {
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+body.home #content p {
+    line-height: normal;
+    border-bottom: 1px solid #ddd;
+}
+body.home p.age {
+    font-weight: 800;
+    color: #bbb;
+    font-size: 80px;
+}
+body.home p.current {
+    font-weight: 200;
+    color: #777;
+    font-size: 60px;
+}
+body.home p.dream {
+    font-weight: 600;
+    color: pink;
+    font-size: 60px;
+}
+body.home p.lifegoal {
+    font-weight: 600;
+    color: #333;
+    font-size: 40px;
+}
+body.about #content article.badge {
+    padding-bottom: 20px;
+    width: 480px;
+    _width: 470px;
+}
+body.about #content article.badge p {
+    font-family: "微软雅黑", "Microsoft Yahei";
+    line-height: normal;
+    border-bottom: 1px solid #ddd;
+}
+body.about p.occupation {
+    font-weight: 800;
+    font-size: 60px;
+    color: #888;
+}
+body.about p.residence {
+    font-weight: 800;
+    font-size: 60px;
+    color: #e5c53e;
+}
+body.about p.education {
+    font-weight: 600;
+    font-size: 40px;
+    color: #aaa;
+}
+body.home #gallery img {
+    margin-bottom: 10px;
+}
+body.about h1 {
+    margin-bottom: 20px;
+}
+body.about aside {
+    float: right;
+}
+#gallery {
+    margin-left: -10px;
+}
+#gallery article {
+    text-align: left;
+}
+#gallery article h2 {
+    color: #555;
+    font-weight: 600;
+    font-size: 20px;
+}
+#gallery article datetime {
+    font-size: 11px;
+}
+#gallery article a {
+    color: #222;
+    display: block;
+    position: relative;
+    width: 280px;
+    padding: 10px;
+}
+#gallery article a:hover {
+    text-decoration: none;
+    z-index: 100;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 5px #888;
+       -moz-box-shadow: 1px 1px 5px #888;
+         -o-box-shadow: 1px 1px 5px #888;
+            box-shadow: 1px 1px 5px #888;
+    -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+}
+#gallery article a:hover h2 {
+    color: #222;
+}
+#gallery.masoned article a {
+    -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+         -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+}
+body.projects h1, p.summary {
+    font-family: "微软雅黑", "Microsoft Yahei";
+    margin-bottom: 20px;
+}
+body.projects h1 a {
+    color: #666;
+}
+body.projects p.summary {
+    color: #aaa;
+    font-size: 40px;
+    font-weight: 600;
+}
+body.projects figure datetime {
+    color: #bbb;
+}
+body.projects figure a {
+    display: block;
+    -webkit-box-shadow: 1px 1px 5px #888;
+       -moz-box-shadow: 1px 1px 5px #888;
+            box-shadow: 1px 1px 5px #888;
+    background-color: #fff;
+    padding: 10px;
+}
+body.projects figure a:hover {
+    text-decoration: none;
+}
+body.projects figure a:hover p {
+    color: #d98e04;
+}
+body.projects figure p {
+    font-family: "微软雅黑", "Microsoft Yahei";
+    font-weight: 600;
+    font-size: 20px;
+}
+body.projects #projects-navigator {
+    padding: 10px;
+}
+body.projects #content .col {
+    float: right;
+}
+body.projects a {
+    color: #222;
+}
+body.projects h1 a:hover {
+    color: #d98e04;
+}
+#content ul {
+    margin: 20px;
+}
+#content ul li {
+    list-style-type: circle;
+}
+#references {
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#references h2 {
+    color: #bbb;
+    font-size: 40px;
+    font-weight: 600;
+}
+#references a {
+    color: #222;
+    font-weight: 800;
+}
+#references ol {
+    margin: 20px 40px;
+}
+#references ol li {
+    list-style-type: upper-roman;
+}
+body.projects .upper-category {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+body.projects .upper-category a {
+    display: block;
+}
+body.projects .upper-category a:hover {
+    text-decoration: none;
+    color: #d98e04;
+}
+body.projects .upper-category a:hover .up-arrow {
+    border-color: #d98e04;
+}
+.up-arrow {
+    width: 16px;
+    margin: 0 auto;
+    height: 16px;
+    display: block;
+    border: 16px solid #222;
+    border-right: none;
+    border-bottom: none;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+body.sticky {             /* in the single resource page */
+    position: relative;
+}
+body.sticky footer {
+    position: absolute;
+    bottom: 0; left: 0;
+}
+footer {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+footer a {
+    color: #222;
+}
+footer .wrap {
+    font-size: 11px;
+    overflow: auto;
+    text-align: right;
+}
+footer ul {
+    float: left;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+footer ul li {
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding-left: 10px;
+    border-left: 1px solid #555;
+    line-height: 12px;
+    margin-right: 10px;
+}
+footer ul li.rss {
+    border-left: none;
+    padding-left: 0;
+    line-height: 22px;
+}
+footer #credits {
+    color: #888;
+}

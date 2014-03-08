@@ -1,0 +1,140 @@
+title: CSS Sprites
+-
+date: 2010, Aug–
+-
+class: resources
+-
+content:
+-
+after-js:
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script language="javascript">
+(function(){
+    function embedFont(fontName) {
+        var font = document.createElement("link");
+        var head = document.getElementsByTagName('head')[0]
+
+        font.href = "http://fonts.googleapis.com/css?family=" + fontName.replace(" ", "+");
+        font.rel = "stylesheet";
+        font.type = "text/css";
+        head.appendChild( font );
+    }
+    embedFont("Lobster");
+    embedFont("IM Fell DW Pica");
+})();
+if (dp) {
+    dp.SyntaxHighlighter.ClipboardSwf = '/flash/clipboard.swf';
+    dp.SyntaxHighlighter.HighlightAll('code');
+}
+/**
+ * jquery.bgpos.js
+ * @author Alexander Farkas
+ * v. 1.02
+ */
+(function($) {
+	$.extend($.fx.step,{
+	    backgroundPosition: function(fx) {
+            if (fx.state === 0 && typeof fx.end == 'string') {
+                var start = $.curCSS(fx.elem,'backgroundPosition');
+                start = toArray(start);
+                fx.start = [start[0],start[2]];
+                var end = toArray(fx.end);
+                fx.end = [end[0],end[2]];
+                fx.unit = [end[1],end[3]];
+			}
+            var nowPosX = [];
+            nowPosX[0] = ((fx.end[0] - fx.start[0]) * fx.pos) + fx.start[0] + fx.unit[0];
+            nowPosX[1] = ((fx.end[1] - fx.start[1]) * fx.pos) + fx.start[1] + fx.unit[1];
+            fx.elem.style.backgroundPosition = nowPosX[0]+' '+nowPosX[1];
+
+           function toArray(strg){
+               strg = strg.replace(/left|top/g,'0px');
+               strg = strg.replace(/right|bottom/g,'100%');
+               strg = strg.replace(/([0-9\.]+)(\s|\)|$)/g,"$1px$2");
+               var res = strg.match(/(-?[0-9\.]+)(px|\%|em|pt)\s(-?[0-9\.]+)(px|\%|em|pt)/);
+               return [parseFloat(res[1],10),res[2],parseFloat(res[3],10),res[4]];
+           }
+        }
+	});
+})(jQuery);
+$(document).ready(function() {
+
+    var $blinkmenu = $(".blink").find("#qiushid-menu");
+    var $marqueemenu = $(".marquee").find("#qiushid-menu");
+
+    $blinkmenu.find('a').hover(function() {
+        $(this).fadeOut(500, function() {
+            $(this).fadeIn();
+        });
+    }, function() {
+        $(this).fadeIn(100);
+    });
+
+    var yPosMap = {
+        home: [-182, 0],
+        camp: [-260, -78],
+        bookstore: [-286, -104],
+        microblog: [-338, -156],
+        network: [-312, -130]
+    };
+    var timerMap = {};
+
+    $marqueemenu.find('a').hover(function() {
+        animate(this, 'show');
+    }, function() {
+        animate(this, 'hide');
+    });
+
+    function animate(block, mode) {
+        var $a = $(block);
+        var pos = getYPos($a);
+        var clsName = $a.parent().attr('class');
+        var map = yPosMap[ clsName ];
+        var originPos = map[ +(mode != 'show') ];
+        var targetPos = map[ +(mode == 'show') ];
+        var delta = (targetPos - originPos) / 20;
+        var reset = function() { $a.css('background-position', '0 '+targetPos+'px'); }
+
+        clearTimers(clsName);
+        if (mode == 'show' && pos >= targetPos ||
+               mode == 'hide' && pos <= targetPos) {
+            reset();
+        }
+        timerMap[clsName] = setInterval(function() {
+            pos = getYPos($a);
+            $a.css('background-position', '0 '+(pos+delta)+'px');
+            if (mode == 'show' && pos >= targetPos ||
+                    mode == 'hide' && pos <= targetPos) {
+                clearInterval(timerMap[clsName]);
+                reset();
+            }
+        }, 10);
+    }
+
+    function clearTimers(clsName) {
+        if (typeof timerMap[clsName] !== "undefined") {
+            clearInterval(timerMap[clsName]);
+        }
+    }
+
+    function getYPos($a) {
+        var pos = $a.css('background-position');
+
+        if (typeof pos === "undefined") {
+            pos = $a.css('background-position-y');
+        }
+        return parseInt(pos.substr(pos.indexOf(' ')), 10);
+    }
+
+    $('#snook-menu').find('a')
+        .css( {backgroundPosition: "-20px 35px"} )
+        .mouseover(function(){
+            $(this).stop().animate({backgroundPosition:"(-20px 94px)"}, {duration:500})
+        })
+        .mouseout(function(){
+            $(this).stop().animate({backgroundPosition:"(40px 35px)"}, {duration:200, complete:function(){
+                $(this).css({backgroundPosition: "-20px 35px"})
+            }})
+        });
+});
+</script>
