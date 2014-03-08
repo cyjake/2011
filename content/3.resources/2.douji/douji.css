@@ -1,0 +1,33 @@
+body,td,th { font: 12px Arial, Helvetica, sans-serif; line-height: 150%; }
+
+html, body {
+    height: 100%;
+}
+.wrap {
+    text-align: left;
+}
+h1 { color: #333; font-size: 300%; font-weight: bold; font-family: "Microsoft Yahei"; }
+h1 a:hover { text-decoration: none; }
+#detail { padding-left: 10px; }
+input[type=submit] {
+    background-color: #777; border: 1px solid #333;
+    border-left: none; border-top: none;
+    padding: 2px 5px; color: #fff;
+}
+input[type=submit]:hover { cursor: pointer; }
+input[type=text] { border: 1px solid #bbb; padding: 3px 2px; }
+input.virgin { color: #777; }
+#books { list-style: none; padding: 0; margin: 0; margin-top: 20px; width: 690px; }
+#books li.book { overflow: auto; zoom: 1; margin-bottom: 10px; padding: 5px; position: relative; }
+#books li.book img { padding: 5px; border: 1px solid #bbb; float: left; width: 70px; height: 100px; }
+#books li.book .desc { margin-left: 90px; }
+#books li.book .desc .title { font-weight: bold; font-size: 130%; font-family: "Microsoft Yahei"; margin-bottom: 5px; }
+#books li.book:nth-child(2n+1) { background-color: #eee; }
+#books li.book:hover { background-color: #ddd; }
+.book-menu {
+    position: absolute; right: 5px; top: 5px;
+    list-style: none;
+    margin: 0; padding: 0;
+}
+img { border: 0; }
+.hidden { display: none; }

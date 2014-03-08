@@ -1,0 +1,129 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    min-height: 100%;
+}
+body > .wrap {
+    text-align: left;
+    font-family: "Microsoft Yahei";
+}
+input[type=button] {
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-left: none; border-top: none;
+    color: #ccc; padding: 5px 10px;
+    display: inline-block;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+       -moz-box-shadow: 2px 2px 2px #ccc;
+            box-shadow: 2px 2px 2px #ccc;
+}
+input[type=button]:hover {
+    cursor: pointer;
+}
+header {
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+    background-color: #222;
+    color: #eee;
+    -webkit-box-shadow: 0 5px 10px #ccc;
+       -moz-box-shadow: 0 5px 10px #ccc;
+            box-shadow: 0 5px 10px #ccc;
+}
+.title {
+    font-size: 60px;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+    margin-bottom: 50px;
+    color: #fff;
+    text-shadow: #222 1px 1px 2px;
+}
+.shadow {
+    -webkit-box-shadow: 5px 5px 5px #ccc;
+       -moz-box-shadow: 5px 5px 5px #ccc;
+            box-shadow: 5px 5px 5px #ccc;
+    margin: 0 10px 20px 0;
+}
+section.col {
+    margin-left: 0;
+}
+#canvas {
+    border: 2px dashed #ddd;
+}
+#canvas.has_border {
+    border: 2px solid #333;
+}
+aside h2 {
+    text-align: right;
+    font-weight: normal; font-size: 20px;
+    margin-bottom: -20px;
+}
+aside > div {
+    border: 1px solid #bbb;
+    margin-bottom: 20px;
+}
+#controller {
+    padding: 20px 0; text-align: center;
+}
+#controller:hover {
+    cursor: pointer;
+}
+#controller > div {
+    margin: 0 auto;
+}
+#controller #start {
+    width: 20px;
+    border: 20px solid #222;
+    border-left: none;
+    border-bottom: none;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+#controller #pause {
+    width: 10px;
+    height: 41px;
+    border: 15px solid #222;
+    border-top: none;
+    border-bottom: none;
+}
+#controller:hover > div {
+    border-color: red !important;
+}
+#score {
+    background-color: #ccc; color: #fff;
+    height: auto;
+}
+#score .value {
+    font-family: Georgia;
+    font-size: 60px;
+    text-align: center;
+    color: #333;
+    padding: 10px 0 20px 0;
+    font-weight: 600;
+}
+#cube-selector {
+    color: #ccc;
+}
+#cube-selector ul {
+    list-style: none;
+    margin: 0; padding: 5px 5px 10px 10px;
+    overflow: auto;
+}
+#cube-selector li {
+    float: left;
+    display: block;
+    padding: 5px;
+    margin: 0 1px 1px 0;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+#cube-selector li:hover {
+    cursor: pointer;
+}
+#cube-selector li:hover, #cube-selector li.selected {
+    background-color: #fff;
+}
