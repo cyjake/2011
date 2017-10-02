@@ -1,6 +1,5 @@
 /*!
  * nil's hidden lab
- * http://lab.dotnil.org/
  *
  * Copyright 2010, Jake Chen
  * licensed under the MIT licenses.

@@ -76,7 +76,7 @@ div#toc ul li {
     line-height: 14px;
 }
 div#toc ul li.selected {
-    background-image: url(http://localhost/~nil/2011/content/3.resources/3.html-css/misc/mark-grey.png);
+    background-image: url(./misc/mark-grey.png);
     background-repeat: no-repeat;
     background-position: left;
     padding-left: 20px;
