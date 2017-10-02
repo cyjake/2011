@@ -308,6 +308,9 @@ body.projects p.summary {
     font-size: 40px;
     font-weight: 600;
 }
+body.projects figure {
+    margin-left: 0;
+}
 body.projects figure datetime {
     color: #bbb;
 }

@@ -18,7 +18,7 @@
   <div class="wrap">
     <nav>
       <ol class="clearfix">
-        <li class="home"><a href="../../../">Chen <span>Yangjian</span></a></li>
+        <li class="home"><a href="../../">Chen <span>Yangjian</span></a></li>
         <li class="resources"><a href="../../resources">Resources</a></li>
         <li class="projects"><a href="../../projects">Projects</a></li>
         <li class="about"><a href="../../about/index.html">About</a></li>
@@ -34,7 +34,7 @@
 </header>
 
             <div class="wrap">
-  <h1><a href="http://localhost/~nil/2011/resources/douji/@url">豆箕</a></h1>
+  <h1><a href=".">豆箕</a></h1>
   <div id="detail">
     <form onsubmit=" return false; ">
       <input type="text" name="keyword" size="70" placeholder="ISBN/ID" class="virgin"/>
@@ -49,9 +49,9 @@
   </ul>
 </div>
 <script type="text/html" id="book_template">
-  <img src="http://localhost/~nil/2011/resources/douji/&lt;%=cover%&gt;">
+  <img src="<%=cover%>">
   <div class="desc">
-    <div class="title"><a href="http://localhost/~nil/2011/resources/douji/&lt;%=link%&gt;" target="_blank">《<%=title%>》</a></div>
+    <div class="title"><a href="<%=link%>" target="_blank">《<%=title%>》</a></div>
     <div><%=author%></div>
     <div class="price">&yen; <%=price%></div>
     <div><%=publisher%></div>
