@@ -219,22 +219,6 @@ body.home p.lifegoal {
     color: #333;
     font-size: 40px;
 }
-body.about #content article.badge {
-    padding-bottom: 20px;
-    width: 480px;
-    _width: 470px;
-}
-body.about #content article.badge p {
-    font-family: "微软雅黑", "Microsoft Yahei";
-    line-height: normal;
-    border-bottom: 1px solid #ddd;
-}
-body.about p.snapshot {
-    color: #777;
-    font-size: 28px;
-    font-weight: 400;
-    padding-bottom: 10px;
-}
 body.home #gallery img {
     margin-bottom: 10px;
 }
