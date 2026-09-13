@@ -1,0 +1,37 @@
+.direfortune-page { color: #302e2a; }
+.direfortune-page .wrap { box-sizing: border-box; max-width: 960px; width: calc(100% - 40px); }
+.direfortune-page nav ol { max-width: 960px; width: 100%; }
+.fortune-content { font-size: 14px !important; }
+.fortune-heading { max-width: 700px; margin: 0 auto 32px; text-align: center; }
+.fortune-content .fortune-kicker { padding-bottom: 8px; color: #9a6b24; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.direfortune-page .fortune-heading h1 { border: 0; font-family: "微软雅黑", "Microsoft Yahei", sans-serif; font-size: clamp(38px, 8vw, 64px); font-weight: 700; letter-spacing: .06em; text-transform: none; }
+.fortune-intro { margin: 16px auto 0; max-width: 600px; color: #69645b; font-size: 15px; line-height: 1.8 !important; }
+.fortune-card { display: grid; grid-template-columns: minmax(240px, .8fr) minmax(300px, 1.2fr); min-height: 330px; overflow: hidden; border: 1px solid #d8d0bf; border-radius: 12px; background: #f8f4ea; box-shadow: 0 18px 44px rgba(74, 61, 39, .10); }
+.fortune-form { padding: 34px; border-right: 1px solid #d8d0bf; background: #efe8d8; }
+.field-group { margin-bottom: 24px; }
+.field-group label { display: block; margin-bottom: 7px; color: #564c3d; font-weight: 700; }
+.field-group input, .field-group select { box-sizing: border-box; width: 100%; min-height: 44px; padding: 9px 11px; border: 1px solid #bcb29f; border-radius: 5px; color: #302e2a; background: #fffdf8; }
+.field-group input:focus, .field-group select:focus, .fortune-submit:focus, .install-button:focus { outline: 3px solid rgba(154, 107, 36, .25); outline-offset: 2px; }
+.fortune-content .field-hint { padding: 5px 0 0; color: #8b8377; font-size: 11px; }
+.fortune-submit, .install-button { border: 0; border-radius: 5px; color: #fff; background: #39352f; cursor: pointer; font-weight: 700; }
+.fortune-submit { width: 100%; min-height: 44px; }
+.install-button { margin-top: 18px; padding: 9px 15px; }
+.fortune-submit:hover, .install-button:hover { background: #9a6b24; }
+.fortune-content .form-error { min-height: 18px; padding: 10px 0 0; color: #9c3f30; }
+.fortune-result { align-self: center; padding: 42px; text-align: center; }
+.fortune-empty { align-self: center; color: #c2b8a7; font-family: Georgia, serif; font-size: 28px; letter-spacing: .5em; text-align: center; }
+.fortune-result[hidden], .fortune-empty[hidden] { display: none; }
+.fortune-content .result-meta { padding-bottom: 10px; color: #877b69; font-size: 12px; }
+.fortune-content .result-weight { padding-bottom: 18px; color: #9a6b24; font-size: 18px; font-weight: 700; }
+.fortune-result h2 { margin-bottom: 20px; color: #302e2a; font-family: "微软雅黑", "Microsoft Yahei", sans-serif; font-size: 22px; font-weight: 700; line-height: 1.45; }
+.fortune-result blockquote { color: #5f594f; font-family: STKaiti, KaiTi, serif; font-size: 18px; line-height: 2; }
+.fortune-content .fortune-note { padding: 16px 0 0; color: #8b8377; font-size: 12px; text-align: center; }
+@media (max-width: 700px) {
+  .direfortune-page .wrap { width: calc(100% - 28px); }
+  .direfortune-page header nav li { margin-right: 7px; }
+  .fortune-content { margin-top: 36px !important; }
+  .fortune-card { grid-template-columns: 1fr; }
+  .fortune-form { padding: 26px; border-right: 0; border-bottom: 1px solid #d8d0bf; }
+  .fortune-result, .fortune-empty { box-sizing: border-box; min-height: 180px; padding: 34px 26px; }
+  .direfortune-page #references h2 { font-size: 30px; }
+}
