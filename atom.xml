@@ -110,32 +110,6 @@
 </entry>
 
   <entry>
-   <title>某实验室</title>
-   <id>tag:localhost,2014:/projects/nmlab/</id>
-   <updated>2014-03-08T16:54:52+11:00</updated>
-   <link rel="alternate" type="text/html" href="http://cyj.me/2011/projects/nmlab/" />
-   <content type="xhtml" xml:lang="en">
-      <div xmlns="http://www.w3.org/1999/xhtml">
-
-
-            <p>学校的一个实验室想要做个主页，辗转联系到我。</p>
-
-<p>网站的空间、管理等，都是系里提供，丢活的人对此方面不是很理解，没有把数据库等信息告诉我。
-我一开始也只是想把他们的资料用 HTML 标记下，CSS 搞搞，就差不多了。后来发现数据其实不少，尤其是各种列表、师生联系方式等。
-就设计了一些文件结构，把资料都弄成 TXT，写了许多相应的 PHP 函数把页面搞出来。</p>
-
-<p>后来有老板看了说需要后台方便管理。因为解释说明 FTP、文本编辑云云，其效不彰，只好照办。
-幸亏之前的工作做得还算清爽，加个后台还算容易。</p>
-
-<p>那段时间刚好 jQuery 也了解得差不多，就写了个插件用来实现广告牌类似的效果。</p>
-
-
-      </div>
-   </content>
-</entry>
-
-
-  <entry>
    <title>Resources</title>
    <id>tag:localhost,2014:/resources/</id>
    <updated>2014-03-08T16:54:52+11:00</updated>
@@ -649,8 +623,8 @@ IE9 如今成了 Underdog，但是也在慢慢赶上。此外，最好整个 IE 
 “志趣广博”，但一上场便露馅，乒乓球、台球、足球、篮球都会打（踢）一点；“博闻强识”，
 例如 PHP、Perl、Python 等 P 字辈编程语言都写过不少，但面试官一问起，便支支吾吾辨不清个所以然。</p>
 
-<p>如果你对我感兴趣，不妨也围观下<a href="http://blog.cyj.me">我的博客</a>，或者我的<a href="http://jakeslomoo.appspot.com">快门集</a>，
-甚至是<a href="http://code.google.com/u/jakeplus/">我的代码们</a>。当然，我在网络上的坑还有很多，狡兔三窟嘛。</p>
+<p>如果你对我感兴趣，不妨也围观下<a href="https://www.cyj.me/">我的博客</a>，或者我的<a href="https://500px.com/_kotori">500px 摄影集</a>，
+甚至是<a href="https://github.com/cyjake">我的代码们</a>。当然，我在网络上的坑还有很多，狡兔三窟嘛。</p>
 
 <p>Chen Yangjian is an IT practitioner in Hangzhou. He graduated from Zhejiang University in 2008 and have been working as several roles in IT industry since then. Developed a blog system in PHP, scripted lots of Perl, wrote some SQL and PL/SQL, designed a few reports using both Actuate and iReport, programmed a lot Java to deal with FTP/Excel etc., and have been developing Python for a while.</p>
 
