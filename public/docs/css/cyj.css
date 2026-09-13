@@ -229,20 +229,11 @@ body.about #content article.badge p {
     line-height: normal;
     border-bottom: 1px solid #ddd;
 }
-body.about p.occupation {
-    font-weight: 800;
-    font-size: 60px;
-    color: #888;
-}
-body.about p.residence {
-    font-weight: 800;
-    font-size: 60px;
-    color: #e5c53e;
-}
-body.about p.education {
-    font-weight: 600;
-    font-size: 40px;
-    color: #aaa;
+body.about p.snapshot {
+    color: #777;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 body.home #gallery img {
     margin-bottom: 10px;
